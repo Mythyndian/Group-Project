@@ -27,7 +27,11 @@ SECRET_KEY = 'm9n3ego!ei+^+*f!vcm8nji&bn_sto=#hz!=-85-si6hp2yo!z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://group-project-deploy-app.herokuapp.com/',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
