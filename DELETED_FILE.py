@@ -1,2 +1,2 @@
 #plik do usuniecia - test commitT
-#test2
+#test2\
