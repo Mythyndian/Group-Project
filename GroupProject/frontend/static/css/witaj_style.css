@@ -1,0 +1,26 @@
+body
+{
+	/* Background pattern from toptal.com */
+    background-image: url("img/tlo.png");
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+#container
+{
+    width: 1000px;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.title
+{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 64px;
+}
+.title a
+{
+    color: #000000;
+	text-decoration: none;
+}
