@@ -5,12 +5,7 @@ from .models import EventLog
 from rest_framework.views import APIView
 from rest_framework.response import Response
 # Create your views here.
-
-
-class main:
-    pass
-
-# Gets all the events
+# Gets all the events localhost:8000/Calendar/events
 
 
 class EventLogView(generics.ListAPIView):
