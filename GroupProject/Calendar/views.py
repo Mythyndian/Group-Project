@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .serializers import EventLogSerializer, CreateEventSerializer
+from .serializers import *
 from .models import EventLog
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -11,7 +11,6 @@ from rest_framework.response import Response
 class EventLogView(generics.ListAPIView):
     queryset = EventLog.objects.all()
     serializer_class = EventLogSerializer
-
 
 class CreateEventView(APIView):
     serializer_class = CreateEventSerializer
@@ -25,3 +24,10 @@ class CreateEventView(APIView):
         if serializer.is_valid():"""
 
     # something going to happen
+
+class ApplicationUserView(generics.ListAPIView):
+    queryset = ApplicationUser.objects.all()
+    serializer_class = ApplicationUserSerializer
+
+class CrateApplicationUserView(APIView):
+    serializer_class = CreateApplicationUserSerializer
